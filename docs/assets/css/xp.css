@@ -1,0 +1,102 @@
+.Xp__hero
+{
+    background-color: #FFF1EB;
+    margin:16px;
+    border-radius: 25px;
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+}
+.Xp__hero span:first-child
+{
+   background-color: #FFDFAE;
+   border-radius: 25px ;
+   padding: 5px 20px;
+   gap: 10px; 
+}
+.Xp__hero span:nth-child(2)
+{
+    background-color: #FFDBCA;
+    border-radius: 25px;
+    padding: 5px 20px;
+    gap: 10px; 
+}
+.Xp__hero h2
+{
+    margin: 10px 0;
+}
+.Xp__hero p
+{
+    margin: 0;
+    grid-column: 1/2;
+    color: #504535;
+}
+.Xp__info
+{
+    margin: 0 16px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.Xp__info div
+{
+    width: 114px;
+    height: 68PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #fff;
+}
+.Xp__info div p
+{
+    margin: 5px 0;
+}
+.Xp__X
+{
+    background-color: #fff;
+    margin: 10px 16px;
+    border-radius: 12px;
+    padding: 20px 20px;
+}
+.Xp__X__Mission
+{
+    background-color: #FFF1EB;
+    border-radius: 12px;
+    padding: 20px 20px;
+    margin-bottom: 8px;
+}
+.Xp__X__Mission h3
+{
+    margin: 0;
+}
+.Xp__X__Mission p
+{
+    margin: 0;
+    line-height: 1.5;
+}
+.Xp__X__Mission ul
+{
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+}
+.Xp__X__Mission ul li
+{
+    line-height: 1.7;
+}
+.Xp__X__Mission ul li span
+{
+    font-weight: bold;
+}
+
+.Xp__X span
+{
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #FFF1EB;
+    border-radius: 25px;
+    margin: 5px 3px;
+    font-size: small;
+}

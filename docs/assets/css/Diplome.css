@@ -1,0 +1,119 @@
+
+.Diplomes--span
+{
+    padding: 5px 10px;
+    gap: 10px;
+    border-radius: 25px;
+    background-color: #FFDFAE;
+    display: flex;
+    width: fit-content;
+    margin: 10px 16px;
+    text-transform: uppercase;
+}
+.Diplomes__Cours
+{
+    background-color: white;
+    margin: 16px;
+    padding: 10px;
+    border-radius: 12px;
+    border-left: 7px solid #D99B26;
+}
+.Diplomes__Cours__Objectif
+{
+    background-color: #FFF1EB;
+    border-radius: 12px;
+    padding: 8px;
+}
+.Diplomes h2,.Diplomes p
+{
+    margin: 0 16px;
+}
+.Diplomes__Cours__Tag, .Diplomes__Cours address ul
+{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 5px;
+}
+.Diplomes__Cours__Tag li
+{
+    background-color: #FFF1EB;
+    font-size: small;
+    border-radius: 25px;
+    padding: 10px;
+}
+.Diplomes__Cours span
+{
+    padding: 5px 10px;
+    border-radius: 25px;
+    background-color: #7F5700;
+    color: white;
+}
+.Diplomes__X
+{
+    background-color: white;
+    margin: 16px;
+    border-radius: 12px;
+    padding: 5px 10px;
+}
+.Diplomes__X header
+{
+    background-color: white;
+    color: black;
+}
+.Diplomes__X header ul
+{
+    display: flex;
+    list-style-type: none;
+    gap: 5px;
+    padding: 0;
+}
+.Diplomes__X header ul li
+{
+    background-color: #FFF1EB;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+.Diplomes__X h2,.Diplomes__X p
+{
+    margin: 0;
+}
+.Diplomes__X ul
+{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.Diplomes__X p
+{
+    margin-top: 16px;
+    line-height: 1.5;
+}
+.Diplomes__X ul li
+{
+    background-color: #FFF1EB;
+    font-size: small;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+.Diplomes__Plus
+{
+    background-color: #FCE3D8;
+    margin: 16px;
+    padding: 10px;
+    border-radius: 12px;
+}
+.Diplomes__Plus h2,.Diplomes__Plus p
+{
+    margin: 10px 0;
+}
+.Diplomes__Plus p
+{
+    line-height: 1.5;
+}
+.Diplomes__X ul .Diplomes__X__valide
+{
+    background-color: #FDC9AF;
+}
