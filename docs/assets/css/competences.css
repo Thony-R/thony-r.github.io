@@ -63,9 +63,17 @@
 {
     -webkit-appearance: none;
     appearance: none;
+    border: none;
     height: 10px;
     width: 100%;
     margin-bottom: 10px;
+    background-color: #F6DED3;
+    border-radius: 25px;
+}
+.maitrise::-moz-progress-bar
+{
+    border-radius: 25px;
+    background-color: #D99B27;
 }
 .maitrise::-webkit-progress-bar
 {
@@ -77,6 +85,7 @@
     border-radius: 25px;
     background-color: #D99B27;
 }
+.maitrise::-moz
 
 .Competences span, .Competences h2
 {
