@@ -88,7 +88,7 @@ header p
     height: 40px;
     gap:10px;
 }
-.Info__links ul li a
+.Info__links ul li
 {
     border: 1px solid #EADECF;
     border-radius:8px ;
@@ -134,7 +134,7 @@ nav ul
     height: 40px;
     gap:10px;
 }
-nav ul li a
+nav ul li 
 {
     display: flex;
     flex-direction: column;
@@ -145,13 +145,13 @@ main
 {
     padding-bottom: 50px;
 }
-nav ul li:first-child a img {
+nav ul li:first-child img {
     filter: brightness(0) saturate(100%) invert(64%) sepia(72%) saturate(800%) hue-rotate(359deg) brightness(89%) contrast(91%);
 }
-nav ul:has(li:not(:first-child) a:hover) li:first-child a img {
+nav ul:has(li:not(:first-child):hover) li:first-child img {
     filter: none;
 }
-nav ul li a:hover img
+nav ul li:hover img
 {
     filter: brightness(0) saturate(100%) invert(64%) sepia(72%) saturate(800%) hue-rotate(359deg) brightness(89%) contrast(91%);
 }

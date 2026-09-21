@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/competences.css">
     <link rel="stylesheet" href="./assets/css/xp.css">
     <link rel="stylesheet" href="./assets/css/Diplome.css">
+    <script src="./assets/js/script.js" defer></script>
     <meta name="theme-color" content="#FBF7F1">
     <title>CV</title>
     <meta name="description" content="coucou c'est mon cv">
@@ -17,7 +18,7 @@
         <p>accessibilité</p>
     </header>
     <main>
-        <article class="Info">
+        <article class="Info views">
             <section class="Info__profil">
                 <img src="./assets/images/Sprite_0007_chromatique_HOME.png" alt="photo professionnel">
                 <span>Anthony RITA
@@ -47,7 +48,7 @@
                 <p>En cours de réorientation professionnelle, je me forme actuellement à la programmation orientée objet et à l'algorithmie. Pour valider mes connaissances en Java, j’ai créé un outil de conception de map 2D dans le Shell et je suis en train de reproduire la mécanique de combat d’un jeu vidéo. Mon expérience passée en restauration m’a amené à savoir faire preuve d’organisation et de rigueur pour gérer une équipe. Je devais aussi être à l’écoute et réactif pour répondre aux attentes des clients. Des atouts que je souhaite mettre au service de mon futur métier. </p>
             </section>
         </article>
-        <article class="Competences" id="Competences">
+        <article class="Competences views" id="Competences">
             <header class="G__header">
                 <span>Anthony RITA
                     <svg width="16" height="16" viewBox="0 0 100 100">
@@ -133,7 +134,7 @@
                 </section>
             </section>
         </article>
-        <article class="Xp" id="experiences">
+        <article class="Xp views" id="experiences">
             <header class="G__header">
                 <span>Anthony RITA
                     <svg width="16" height="16" viewBox="0 0 100 100">
@@ -220,7 +221,7 @@
                 <span>Rigeur</span><span>Anglais (Broken)</span><span>Gestion du stress</span>
             </section>
         </article>
-        <article class="Diplomes" id="diplome">
+        <article class="Diplomes views" id="diplome">
                 <header class="G__header">
                     <span>Anthony RITA
                         <svg width="16" height="16" viewBox="0 0 100 100">
@@ -334,10 +335,10 @@
     </main>
     <nav>
         <ul>
-            <li><a href="#"><img src="./assets/images/nav-info.svg" alt="icone">Info</a></li>
-            <li><a href="#Competences"><img src="./assets/images/nav-competences.svg" alt="icone">Compétences</a></li>
-            <li><a href="#experiences"><img src="./assets/images/nav-experiences.svg" alt="icone">Expériences</a></li>
-            <li><a href="#diplome"><img src="./assets/images/nav-diplomes.svg" alt="icone">Diplômes</a></li>
+            <li class="nav" id="Info"><img src="./assets/images/nav-info.svg" alt="icone">Info</li>
+            <li class="nav" id="Competences"><img src="./assets/images/nav-experiences.svg" alt="icone">Expériences</li>
+            <li class="nav" id="Xp"><img src="./assets/images/nav-competences.svg" alt="icone">Compétences</li>
+            <li class="nav" id="Diplomes"><img src="./assets/images/nav-diplomes.svg" alt="icone">Diplômes</li>
         </ul>
     </nav>
 </body>
