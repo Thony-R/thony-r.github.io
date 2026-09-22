@@ -2,7 +2,7 @@
 {
     font-family: Arial, Helvetica, sans-serif;
 }
-header
+.header__General
 {
     background-color: black;
     color: white;
@@ -20,14 +20,12 @@ body
     background-color: #FBF7F1;
     height: 100vh;
 }
-header p
+.header__General p
 {
     margin: 0;
 }
-/* .Info{
-    display: none ;
-} */
-.Info__profil span
+
+.Header__profil h2
 {
     display: inline-flex;
     align-items: center;
@@ -35,21 +33,21 @@ header p
     font-size: 24px;
     font-weight: bold;
 }
-.Info__profil
+.Header__profil
 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.Info__profil h1
+.Header__profil h1
 {
     text-align: center;
     font-size: 16px;
     font-weight: lighter;
     margin: 20px 0;
     color: #5a3825;
-}
-.Info__profil img
+} 
+ .Header__profil img
 {
     border: 2px solid #DAA136;
     box-shadow: 0px 0px 20px #daa136c5 ;
@@ -57,6 +55,56 @@ header p
     height: 100px;
     width: 100px;
     margin: 20px 0;
+} 
+
+
+
+.Header__Noprofil
+{
+    height: 50px;
+    width: 100%;
+    background-color: #FFF8F7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.24);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Header__Noprofil img
+{
+    margin-left: 10px;
+    height: 75%;
+    border: 1px solid #DAA136;
+    box-shadow: 0px 0px 20px #daa136c5 ;
+    border-radius: 100%;
+}
+.Header__Noprofil div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Header__Noprofil h1
+{
+    font-size: 16px;
+    font-weight: lighter;
+    color: #5a3825;
+    margin: 0;
+}
+.Header__Noprofil h2
+{
+    display: inline-flex;
+    gap: 7px;
+    font-size: 16px;
+    margin: 0;
+    align-items: center;
+    justify-items: center;
+}
+.Header__Noprofil h2 svg
+{
+    width: 16px;
+    height: 16px;
+    margin-top: -3px;
 }
 .Info__àPropos
 {
@@ -66,7 +114,7 @@ header p
     padding: 0 20px;
     background-color: #fff;
 }
-.Info__àPropos h2
+.Info__àPropos h3
 {
     color: #5C3A21;
     text-align: center;
@@ -88,7 +136,7 @@ header p
     height: 40px;
     gap:10px;
 }
-.Info__links ul li
+.Info__links ul li a
 {
     border: 1px solid #EADECF;
     border-radius:8px ;
