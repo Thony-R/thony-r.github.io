@@ -4,30 +4,56 @@
 }
 .Xp__hero
 {
-    background-color: #FFF1EB;
+    background-color: #FFeae0;
     margin:16px;
     border-radius: 25px;
     padding: 15px 20px;
     display: grid;
-    grid-template-columns: 60% 1fr;
+    grid-template-columns: 65% 1fr;
+}
+.Xp__hero img{
+    height: 50%;
+    align-self: center;
+    justify-self: flex-end;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+.Xp__hero span:first-child img
+{
+    height: 16px;
 }
 .Xp__hero span:first-child
 {
-   background-color: #FFDFAE;
-   border-radius: 25px ;
-   padding: 5px 20px;
-   gap: 10px; 
+    border-radius: 25px ;
+    padding: 5px 20px;
+    margin-right: 2px;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #281900;
+    text-transform: uppercase;
+    background-color: #FFDFAE;
+    display: flex;
+    gap: 5px;
 }
 .Xp__hero span:nth-child(2)
 {
     background-color: #FFDBCA;
     border-radius: 25px;
     padding: 5px 20px;
-    gap: 10px; 
+    margin-left: 2px;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #2F1405;
+    text-transform: uppercase; 
 }
-.Xp__hero h2
+.Xp__hero h3
 {
     margin: 10px 0;
+    line-height: 1.2;
+    font-size: 24px;
+    font-weight: 700;
 }
 .Xp__hero p
 {
@@ -53,9 +79,30 @@
     border-radius: 12px;
     background-color: #fff;
 }
+.Xp__info__first span
+{
+    color: #7F5700;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.Xp__info__second span
+{
+    color: #D69C2E;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.Xp__info__third span
+{
+    color: #7C5641;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
 .Xp__info div p
 {
     margin: 5px 0;
+    color: #504535;
+    text-transform: uppercase;
+    font-size: 10px;
 }
 .Xp__X
 {
@@ -64,38 +111,137 @@
     border-radius: 12px;
     padding: 20px 20px;
 }
+.Xp__X__Mission div
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.Xp__X__Mission div address
+{
+    color: #7F5700;
+    font-style: normal;
+    font-size: 13px;
+}
+.Xp__X__Mission div h4
+{
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 5px;
+    margin: 0;
+}
+.Xp__X__Mission--moreP
+{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.Xp__X--XP,.Xp__X__Mission--moreP
+{
+    color:#504535;
+    margin: 0;
+    line-height: 1.5;
+}
+.Xp__X time,.Xp__X--addspan
+{
+    color: #7F5700;
+    font-weight: bold;
+    grid-column: 1/2;
+    font-size: 12px;
+    font-weight: 800;
+}
+.Xp__X h3
+{
+    margin: 5px 0;
+    grid-column: 1/2;
+}
+.Xp__X--immo, .Xp__X--address
+{
+    color: #281900;
+    font-size: 13px;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.Xp__X--div
+{
+    display: grid;
+    grid-template-columns: 1fr 10%;
+}
+.Xp__X img
+{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
 .Xp__X__Mission
 {
     background-color: #FFF1EB;
     border-radius: 12px;
-    padding: 20px 20px;
+    padding: 10px 20px;
+    margin-top: 16px;
     margin-bottom: 8px;
+}
+.Xp__X__Mission--h4
+{
+    color: #7F5700;
+    font-weight: lighter;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.Xp__X__Mission--liste
+{
+    font-weight: bold;
+    font-size: 14px;
 }
 .Xp__X__Mission h3
 {
     margin: 0;
 }
+.Xp__X__Mission--titre
+{
+    color: #7C5641;
+    font-weight: lighter;
+    margin: 10px 0;
+}
+.Xp__X__Mission--titreX
+{
+    color: #79533E;
+    line-height: 1.5;
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 10px;
+    margin: 5px 0;
+}
+.Xp__X__Mission--immersionP
+{
+    color: #504535;
+    font-weight: bold;
+}
 .Xp__X__Mission p
 {
     margin: 0;
     line-height: 1.5;
+    color: #251912;
 }
 .Xp__X__Mission ul
 {
-    margin: 10px 0;
+    margin: 0;
     padding: 0;
     list-style-type: none;
 }
 .Xp__X__Mission ul li
 {
-    line-height: 1.7;
+    line-height: 1.5;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 10% 1fr;
 }
-.Xp__X__Mission ul li span
-{
-    font-weight: bold;
+.Xp__X__Mission ul li img{
+    grid-column: 1/2;
 }
-
-.Xp__X span
+.span
 {
     display: inline-block;
     padding: 10px 10px;

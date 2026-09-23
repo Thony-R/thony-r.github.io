@@ -25,11 +25,18 @@ body
     margin: 0;
 }
 
+.Header__profil div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .Header__profil h2
 {
     display: inline-flex;
     align-items: center;
     gap: 4px;
+    margin: 0;
     font-size: 24px;
     font-weight: bold;
 }
