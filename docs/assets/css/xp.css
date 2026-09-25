@@ -30,7 +30,7 @@
     padding: 5px 20px;
     margin-right: 2px;
     font-weight: 800;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.5;
     color: #281900;
     text-transform: uppercase;
@@ -45,7 +45,7 @@
     padding: 5px 20px;
     margin-left: 2px;
     font-weight: 800;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.5;
     color: #2F1405;
     text-transform: uppercase; 
@@ -54,7 +54,7 @@
 {
     margin: 10px 0;
     line-height: 1.2;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 .Xp__hero p
@@ -104,7 +104,7 @@
     margin: 5px 0;
     color: #504535;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 0.75rem;
 }
 .Xp__X
 {
@@ -123,7 +123,7 @@
 {
     color: #7F5700;
     font-style: normal;
-    font-size: 13px;
+    font-size: 0.813rem;
 }
 .Xp__X__Mission div h4
 {
@@ -160,7 +160,7 @@
 .Xp__X--immo, .Xp__X--address
 {
     color: #281900;
-    font-size: 13px;
+    font-size: 0.813rem;
     font-style: normal;
     letter-spacing: 1px;
     margin: 0;
@@ -193,7 +193,7 @@
 .Xp__X__Mission--liste
 {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .Xp__X__Mission h3
 {
