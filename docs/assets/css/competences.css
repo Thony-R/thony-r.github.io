@@ -2,55 +2,83 @@
 {
     display: none;
 }
-.G__header
+.Competences h3
 {
-    height: 50px;
-    background-color: #FFF8F7;
-
-    color: black;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.24);
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
+    margin: 0 16px;
+    font-size: 1.625rem;
+    
 }
-.G__header span 
+.Competences p
 {
-    display: inline-flex;
-    align-items: center;
-    font-weight: bold;
-    gap: 10px;
+    color: #504535;
 }
-
+.Competences--p
+{
+    line-height: 1.7;
+    margin: 10px 16px;
+}
 .Competences__X
 {
     background-color: #fff;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    margin: 10px 16px;
+    margin: 16px 16px;
+    padding: 16px 16px;
 }
-.Competences__X h3
+.Competences__X__header
 {
-    margin: 10px 20px;
+    display: flex;
+    margin-bottom: 20px;
+    gap: 8px;
+}
+.Competences__X__header div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;
+}
+.Competences__X__header div h4
+{
+
+    font-size: 1.125rem;
+    margin: 0;
+
+}
+.Competences__X__header div p
+{
+    font-size: 0.813rem;
+    margin: 0;
+}
+.Competences__X__header img
+{
+    order: -1;
+    width: 32px;
 }
 .Competences__X__X
 {
+    box-sizing: border-box;
     background-color: #FFF1EB;
-    width: 80%;
+    width: 100%;
     border-radius: 10px;
-    padding: 0 10px;
+    padding: 8px 8px;
     align-self: center;
-    margin: 10px 0;
+}
+.Competences__X__X--margine
+{
+    margin-top: 12px;
 }
 .Competences__X__X .head
 {
     display: flex;
     align-items: center;
+    margin-bottom: 4px;
     gap: 10px;
 }
-.Competences__X__X .head h4
+.Competences__X__X .head h5
 {
-    margin: 10px 0;
+    margin:0;
+    font-size: 0.875rem;
 }
 .Competences__X__X .head span
 {
@@ -58,19 +86,20 @@
     border-radius: 50px;
     margin: 0 0;
     background-color: #FFDFAE;
+    font-size: 0.75rem;
 }
 .Competences__X__X  p
 {
-    margin: 0 0;
+    margin: 4px 0;
+    line-height: 1.5;
 }
 .maitrise
 {
-    -webkit-appearance: none;
+     -webkit-appearance: none;
     appearance: none;
     border: none;
     height: 10px;
     width: 100%;
-    margin-bottom: 10px;
     background-color: #F6DED3;
     border-radius: 25px;
 }
@@ -108,12 +137,5 @@
     font-weight: 800;
     text-transform: uppercase;
     color: #281900;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
-.Competences p
-{
-    margin: 10px 16px;
-    color: #504535;
-}
-
- 
