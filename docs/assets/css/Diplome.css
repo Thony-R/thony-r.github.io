@@ -1,22 +1,39 @@
 .Diplomes
 {
     display: none;
+    margin: 0 1rem;
 }
 .Diplomes--span
 {
-    padding: 5px 10px;
-    gap: 10px;
+    padding: 5px 12px;
+    gap: 8px;
     border-radius: 25px;
     background-color: #FFDFAE;
     display: flex;
     width: fit-content;
-    margin: 10px 16px;
+    margin: 10px 0;
     text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 900;
+    color: #7F5700;
+}
+.Diplomes h3,.Diplomes p
+{
+    margin: 0;
+}
+.Diplomes h3
+{
+    font-size: 1.625rem;
+}
+.Diplomes > p
+{
+    color: #504535;
+    line-height: 1.5;
 }
 .Diplomes__Cours
 {
     background-color: white;
-    margin: 16px;
+    margin: 16px 0;
     padding: 10px;
     border-radius: 12px;
     border-left: 7px solid #D99B26;
@@ -27,10 +44,7 @@
     border-radius: 12px;
     padding: 8px;
 }
-.Diplomes h2,.Diplomes p
-{
-    margin: 0 16px;
-}
+
 .Diplomes__Cours__Tag, .Diplomes__Cours address ul
 {
     list-style-type: none;
