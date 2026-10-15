@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .Diplomes
 {
     display: none;
@@ -30,6 +33,9 @@
     color: #504535;
     line-height: 1.5;
 }
+.Diplomes__Cours address ul li{
+    color: #504535;
+}
 .Diplomes__Cours
 {
     background-color: white;
@@ -44,13 +50,29 @@
     border-radius: 12px;
     padding: 8px;
 }
-
+.Diplomes__Cours__Objectif h5
+{
+    color: #7F5700;
+    display: flex;
+    font-weight: normal;
+    gap: 7px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1rem;    
+}
+.Diplomes__Cours__Objectif p
+{
+    line-height: 1.5;
+    color: #504535;
+}
 .Diplomes__Cours__Tag, .Diplomes__Cours address ul
 {
     list-style-type: none;
     padding-left: 0;
     display: flex;
     gap: 5px;
+    font-style: normal;
+    color: #504535;
 }
 .Diplomes__Cours__Tag li
 {
@@ -69,7 +91,7 @@
 .Diplomes__X
 {
     background-color: white;
-    margin: 16px;
+    margin: 16px 0;
     border-radius: 12px;
     padding: 5px 10px;
 }
@@ -90,6 +112,10 @@
     background-color: #FFF1EB;
     padding: 5px 10px;
     border-radius: 25px;
+}
+.Diplomes__X header ul li:first-child
+{
+    background-color: #FCE3D8;
 }
 .Diplomes__X h2,.Diplomes__X p
 {
@@ -118,7 +144,6 @@
 .Diplomes__Plus
 {
     background-color: #FCE3D8;
-    margin: 16px;
     padding: 10px;
     border-radius: 12px;
 }
@@ -133,4 +158,27 @@
 .Diplomes__X ul .Diplomes__X__valide
 {
     background-color: #FDC9AF;
+}
+.Diplomes__Address ul li:last-child
+{
+    color: #7C5641;
+}
+address
+{
+    font-style: normal;
+}
+address >span:last-child
+{
+    color: #7C5641;
+}
+h4
+{
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin: 8px 0;
+}
+.Diplomes__X p,.Diplomes__Plus p
+{
+    line-height: 1.5;
+    color: #504535;
 }

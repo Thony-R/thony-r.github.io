@@ -1,6 +1,7 @@
 const btns = document.querySelectorAll('.nav');
 const ecrans = document.querySelectorAll('.views');    
 const header = document.querySelector('.header');
+const main = document.querySelector('main');
 
     btns.forEach(btn => 
     {
@@ -21,7 +22,7 @@ const header = document.querySelector('.header');
             header.classList.add('Header__profil');
             header.classList.remove('Header__Noprofil');
         }
-        window.scrollTo(
+        main.scrollTo(
         {
             top: 0,
             behavior: 'smooth'
