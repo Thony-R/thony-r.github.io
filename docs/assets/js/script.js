@@ -2,6 +2,8 @@ const btns = document.querySelectorAll('.nav');
 const ecrans = document.querySelectorAll('.views');    
 const header = document.querySelector('.header');
 const main = document.querySelector('main');
+const butonNav=document.querySelector(".menu__nav");
+const nav = document.querySelector('nav');
 
     btns.forEach(btn => 
     {
@@ -29,3 +31,7 @@ const main = document.querySelector('main');
         })
         })
     })
+butonNav.addEventListener("click",()=>{
+    nav.classList.toggle("active");
+    butonNav.classList.toggle("active");
+})
