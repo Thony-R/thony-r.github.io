@@ -219,9 +219,13 @@ main
 nav ul li:first-child img {
     filter: brightness(0) saturate(100%) invert(64%) sepia(72%) saturate(800%) hue-rotate(359deg) brightness(89%) contrast(91%);
 }
-nav ul:has(li:not(:first-child):hover) li:first-child img {
-    filter: none;
+@media (max-width:767px)
+{
+    nav ul:has(li:not(:first-child):hover) li:first-child img {
+        filter: none;
+    }
 }
+
 nav ul li:hover img
 {
     filter: brightness(0) saturate(100%) invert(64%) sepia(72%) saturate(800%) hue-rotate(359deg) brightness(89%) contrast(91%);
@@ -230,6 +234,10 @@ nav ul li:hover img
 {
     display: none;
 }
+
+
+
+
 @media (min-width:768px) 
 {
 
@@ -333,62 +341,24 @@ nav ul li:hover img
     }
 
 
-    /* Délais en cascade pour chaque élément
-    nav.active ul li:nth-child(1) { animation-delay: 0.1s; }
-    nav.active ul li:nth-child(2) { animation-delay: 0.3s; }
-    nav.active ul li:nth-child(3) { animation-delay: 0.5s; }
-    nav.active ul li:nth-child(4) { animation-delay: 0.7s; } */
-
     @keyframes defilementNav {
-        0% {
-            /* Point de départ : en haut et tout petit */
-            transform: translateY(0px) scale(0.1);
-            opacity: 1; 
+        from {
+            opacity: 0;
+            transform: translateY(10px);
         }
-        50% {
-            /* Étape 1 : Il est arrivé à sa position finale (124px), mais il est encore petit (0.1) */
-            transform: translateY(124px) scale(0.1);
+        to {
             opacity: 1;
+            transform: translateY(124px);
         }
-        100% { 
-            /* Étape 2 : Il reste à sa position finale (124px) et prend sa taille normale (1) */
-            transform: translateY(124px) scale(1);
-            opacity: 1;
-            /* display: flex; */
-        } 
     }
     
     nav.active ul li
     {
-         /* display: none;  */
-        animation: defilementNav 0.5s forwards ease-out;
-        animation-delay: calc(sibling-index() * 0.5s);
+        animation: defilementNav 0.3s forwards ease-out;
+        animation-delay: calc(sibling-index() * 0.3s);
         opacity: 0;
     }
-    /* @keyframes defilementNav 
-    {
-        0%{
-           scale: 0.1;
-           opacity: 0; 
-           transform: translateY(0px);
-        }
-        50%{
-            scale: 0.1;
-            opacity: 1;
-        }
-        90%{
-            
-            opacity: 1;
 
-            scale: 0.1;
-        }
-        100%{ 
-            opacity: 1;
-            scale:1;
-            transform: translateY(124px);
-            display: flex;
-        } 
-    }   */
     nav ul
     {
         all: initial;
@@ -403,7 +373,6 @@ nav ul li:hover img
     {
         justify-content: center;
         border-radius: 100%;
-        /* margin-top: 1.5rem; */
         width: 100px;
         height: 100px;
         background-color: #fbf7f18a;
@@ -413,25 +382,32 @@ nav ul li:hover img
     {
         display: none;
     }
+    nav ul li:first-child img 
+    {
+        all: initial;
+        filter: brightness(0);
+    }
     nav ul li img
     {
+        all: initial;
         width: 25px;
         filter: brightness(0);
     }
-    nav ul li:hover
+    nav ul li:hover,.nav.active
     {
-        transition: all 0.3s;
+        transition: all 0.5s;
         width: 150px;
         height: 100px;
         background-color: rgb(218 161 54);
         color: white;
         border-radius: 50px;
     }
-    nav ul li:hover img
+    nav ul li:hover img,.nav.active img
     {
+        all: initial;
         filter: brightness(255);
     }
-    nav ul li:hover span
+    nav ul li:hover span,.nav.active span
     {
         display: flex;
     }
